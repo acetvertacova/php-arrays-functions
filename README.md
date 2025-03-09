@@ -23,9 +23,10 @@
    1.5 Type `git clone`, and then paste the URL you copied earlier.
 
    1.6 Press Enter to create your local clone.
-3. Navigating to the project folder in terminal: `cd [absolute-path-to-the-project-folder]`.
-4. Starting the PHP server: `php -S localhost:8080`.
-5. Opening the project in a browser: `http://localhost:8000/filename.php`.
+   
+2. Navigating to the project folder in terminal: `cd [absolute-path-to-the-project-folder]`.
+3. Starting the PHP server: `php -S localhost:8080`.
+4. Opening the project in a browser: `http://localhost:8000/filename.php`.
 
 ## Lab's description 
 
@@ -46,6 +47,7 @@ Spaceship Operator (`<=>`):
   - 1 if the left-hand side is greater than the right-hand side.
 
     ```php
+    
         function sortTransactionByDate(array &$transactions)
         {
 
@@ -53,6 +55,7 @@ Spaceship Operator (`<=>`):
                 return $currentTransaction['date'] <=> $nextTransaction['date'];
             });
         }
+    
     ```
 
 <img scr="docs-images/sorting.png">
@@ -66,7 +69,7 @@ The `explode()` function splits the description string into an array of words by
 
 The `in_array()` function checks if $descriptionPart is found in the array of words resulting from `explode()`. If it finds the $descriptionPart in the transaction's description, it returns true, and the current transaction is returned.
 
-    ```php
+   ```php
         function findTransactionByDescription(string $descriptionPart)
         {
             global $transactions;
@@ -81,7 +84,7 @@ The `in_array()` function checks if $descriptionPart is found in the array of wo
         }
 
         print_r(findTransactionByDescription("friends"));
-    ```
+   ```
 
 <img scr="docs-images/description.png">
 
@@ -105,45 +108,45 @@ An array in PHP is actually an ordered map. A map is a type that associates valu
  - As you can see, indexed arrays are the same as associative arrays, but associative arrays have names instead of numbers: 
 
     ```php
-    $myCar = [
-    "brand" => "Ford",
-    "model" => "Mustang",
-    "year" => 1964
-    ];
+      $myCar = [
+      "brand" => "Ford",
+      "model" => "Mustang",
+      "year" => 1964
+      ];
     ```
 
  - You can declare an empty array first, and add items to it later: 
 
     ```php
-    $cars = [];
-    $cars[0] = "Volvo";
-    $cars[1] = "BMW";
-    $cars[2] = "Toyota";
+      $cars = [];
+      $cars[0] = "Volvo";
+      $cars[1] = "BMW";
+      $cars[2] = "Toyota";
     ```
  The same goes for associative arrays, you can declare the array first, and then add items to it:
 
-    ```php
+   ```php
     $myCar = [];
     $myCar["brand"] = "Ford";
     $myCar["model"] = "Mustang";
     $myCar["year"] = 1964;
-    ```
+   ```
 
 3. What is the `foreach` loop used for?
 
 The foreach construct provides an easy way to iterate over arrays.
 
-    ```php
+   ```php
         foreach (iterable_expression as $value) {
             statement_list
         }
-    ```
+   ```
 
-    ```php
+   ```php
         foreach (iterable_expression as $key => $value) {
             statement_list
         }
-    ```
+   ```
 
 ## Source List
 
