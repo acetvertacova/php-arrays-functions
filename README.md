@@ -58,7 +58,7 @@ Spaceship Operator (`<=>`):
     
     ```
 
-<img scr="docs-images/sorting.png">
+<img src="docs-images/sorting.png">
 
 **Finding by description's part**
 
@@ -86,7 +86,7 @@ The `in_array()` function checks if $descriptionPart is found in the array of wo
         print_r(findTransactionByDescription("friends"));
    ```
 
-<img scr="docs-images/description.png">
+<img src="docs-images/description.png">
 
 ## Control Q
 
