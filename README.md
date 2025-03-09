@@ -32,7 +32,7 @@
 
 This project is a banking transaction management system in PHP with features for adding, deleting, sorting, and searching transactions. It also includes file system operations to display images in a gallery format.
 
-## Usage Examples
+## Task 1
 
 **Sorting transactions**
 
@@ -150,6 +150,16 @@ The foreach construct provides an easy way to iterate over arrays.
             statement_list
         }
    ```
+## Task 2
+
+This PHP script dynamically displays images from a specified directory (`image/`) in a grid layout. The images are retrieved using the `scandir` function, and the script loops through the files to display them on the page.
+
+**Code Breakdown:**
+
+ 1. Scans the `image/` directory to get a list of files.
+ 2. Loops through the files, skipping special directories (`.` and `..`).
+ 3. Constructs the path to each image and displays it in a grid layout.
+ 4. The page is styled with inline CSS for the header, image grid, and footer.
 
 ## Source List
 
