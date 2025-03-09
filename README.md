@@ -161,6 +161,11 @@ This PHP script dynamically displays images from a specified directory (`image/`
  3. Constructs the path to each image and displays it in a grid layout.
  4. The page is styled with inline CSS for the header, image grid, and footer.
 
+**The result:**
+
+<img src="docs-images/dogs.png">
+
+
 ## Source List
 
 - [Function empty()](https://www.php.net/manual/en/function.empty.php)
